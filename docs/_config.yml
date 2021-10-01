@@ -1,1 +1,11 @@
 theme: jekyll-theme-slate
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      dev: "CondorHalon"
+      publisher: "CondorHalcon"
