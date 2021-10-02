@@ -1,4 +1,5 @@
 ---
+layout: "default"
 title: "About | CondorHalcon"
 permalink: /about/
 ---
@@ -7,4 +8,4 @@ permalink: /about/
 
 ### Contact Info
 * __Email:__ judahhohawi@outlook.com
-* __Discord:__ [https://discord.gg/x7qNK3e447](https://discord.gg/x7qNK3e447)
+* __Discord:__ [discord.gg/x7qNK3e447](https://discord.gg/x7qNK3e447)
