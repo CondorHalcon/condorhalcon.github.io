@@ -1,11 +1,8 @@
 ---
 layout: "default"
 title: "Home | CondorHalcon"
-permalink: /home/
+permalink: /home
 ---
 
-* [About Me](about.md)
-* Project List
-
-## Project List
+# Home
 > No uploaded projects yet.

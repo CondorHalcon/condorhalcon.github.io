@@ -1,0 +1,80 @@
+/* DEFAULT STYLING */
+* {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: rgb(80, 80, 80);
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+header, footer {
+    background-color: black;
+}
+
+/* SPECIFIC STYLING */
+
+/* header & nav */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+ul.nav-object {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li.nav-item {
+    float: right;
+    border-left: 1px solid white;
+}
+li.nav-title {
+    float: left;
+}
+li.nav-item a,li.nav-title a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.nav-item a:hover {
+    background-color: darkgray;
+}
+
+/* main */
+.column {
+    float: left;
+    padding: 1px;
+}
+.column.side { width: 10%; }
+.column.main { width: 85%; }
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* footer */
+footer {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.github-credits {
+    font-size: 10px;
+}
