@@ -11,14 +11,13 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
-header, footer {
-    background-color: black;
-}
 
 /* SPECIFIC STYLING */
 
 /* header & nav */
 header {
+    background-color: rgb(50, 50, 50);
+    border-bottom: 1px solid white;
     position: sticky;
     top: 0;
     left: 0;
@@ -26,21 +25,19 @@ header {
 }
 ul.nav-object {
     list-style-type: none;
-    margin: 0;
+    margin: 0 10%;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
 }
 li.nav-item {
     float: right;
-    border-left: 1px solid white;
+    border-left: 1px dotted white;
 }
 li.nav-title {
     float: left;
 }
 li.nav-item a,li.nav-title a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -50,31 +47,44 @@ li.nav-item a:hover {
 }
 
 /* main */
-.column {
-    float: left;
-    padding: 1px;
-}
-.column.side { width: 10%; }
-.column.main { width: 85%; }
-main:after {
+main {
+    margin: 0 10%;
     content: "";
     display: table;
     clear: both;
 }
 @media screen and (max-width:600px) {
-    .column {
-        width: 100%;
-    }
+    
 }
 
 /* footer */
 footer {
+    border-top: 1px solid white;
     margin: 0;
-    padding: 0;
+    padding: 0% 10%;
     bottom: 0;
     left: 0;
     width: 100%;
 }
+.site-contact {
+    margin: 0;
+}
+p.site-contact {
+    margin-top: 2%;
+}
+ul.site-contact {
+    list-style-type: none;
+    margin-bottom: 2%;
+}
 .github-credits {
     font-size: 10px;
+    margin-bottom: 2%;
+}
+
+/* text & font */
+h1 {
+    border-bottom: 1px solid lightgray;
+}
+h2 {
+    border-bottom: 1px dashed lightgray;
 }
