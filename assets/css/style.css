@@ -18,6 +18,7 @@ body {
 header {
     background-color: rgb(50, 50, 50);
     border-bottom: 1px solid white;
+    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     left: 0;
@@ -83,8 +84,10 @@ ul.site-contact {
 
 /* text & font */
 h1 {
+    width: 100%;
     border-bottom: 1px solid lightgray;
 }
 h2 {
+    width: 100%;
     border-bottom: 1px dashed lightgray;
 }
