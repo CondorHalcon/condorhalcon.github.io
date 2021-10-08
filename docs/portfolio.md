@@ -1,6 +1,6 @@
 ---
 layout: "default"
-title: "Portfolio | CondorHalcon"
+title: "Portfolio"
 permalink: /portfolio
 ---
 

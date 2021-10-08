@@ -1,6 +1,6 @@
 ---
 layout: "default"
-title: "Home | CondorHalcon"
+title: "Home"
 permalink: /home
 ---
 
