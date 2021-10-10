@@ -2,7 +2,7 @@
     {% if {{site.inMaintenance}} and {{page.maintenancePage == false}} %}
     <title>{{page.title}} | {{site.title}}</title>
     <meta http-equiv="refresh" content="0; URL=/maintenance">
-    {% elseif {{site.inMaintenance == false}} and {{page.maintenancePage}} %}
+    {% elsif {{site.inMaintenance == false}} and {{page.maintenancePage}} %}
     <title>{{page.title}} | {{site.title}}</title>
     <meta http-equiv="refresh" content="0; URL=/home">
     {% else %}
