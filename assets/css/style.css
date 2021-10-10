@@ -58,6 +58,10 @@ main {
     display: table;
     clear: both;
 }
+div.site-maintenance {
+    margin: 0%;
+    text-align: center;
+}
 
 /* footer */
 footer {

@@ -1,7 +1,11 @@
 <header>
     <ul class="nav-object">
+        {% if {{site.inMaintenance}} %}
+        <li class="nav-title"><a href="/maintenance">{{site.titlecaps}}</a></li>
+        {% else %}
         <li class="nav-title"><a href="/home">{{site.titlecaps}}</a></li>
         <li class="nav-item"><a href="/portfolio">Portfolio</a></li>
         <li class="nav-item"><a href="/about">About Me</a></li>
+        {% endif %}
     </nav>
 </header>
