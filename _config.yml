@@ -7,6 +7,8 @@ contact:
     discord:
         text: "discord.gg/x7qNK3e447"
         url: "https://discord.gg/x7qNK3e447"
+    description: >
+        My name is CondorHalcon, I am a game developer.
 host:
     name: "Github Pages"
     url: "https://pages.github.com/"
