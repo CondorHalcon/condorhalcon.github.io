@@ -2,3 +2,9 @@
 
 # VSCode
 *.code-workspace
+
+# jekyll
+Gemfile
+Gemfile.*
+.jekyll-cache/**
+_site/**

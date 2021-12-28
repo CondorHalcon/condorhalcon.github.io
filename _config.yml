@@ -1,25 +1,70 @@
 title: "CondorHalcon"
 titlecaps: "CONDORHALCON"
-inMaintenance: true
+inMaintenance: false
 contact:
     name: "CondorHalcon"
     email2: "judahhohawi@outlook.com"
     discord:
         text: "discord.gg/x7qNK3e447"
         url: "https://discord.gg/x7qNK3e447"
-    description: >
-        My name is CondorHalcon, I am a game developer.
-host:
+    github:
+        tag: "@CondorHalcon"
+        url: "https://github.com/CondorHalcon"
+description: >
+    This site is a Portfolio for CondorHalcon.
+webhost:
     name: "Github Pages"
     url: "https://pages.github.com/"
 
 defaults:
     -
         scope:
-            path: ""
+            path: "docs"
             type: "pages"
         values:
             layout: "default"
             title: "Page"
             maintenancePage: false
-  
+    -
+        scope:
+            path: "docs/projectPages"
+            type: "pages"
+        values:
+            layout: "product"
+            title: "Product"
+            maintenancePage: false
+
+            image: data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=
+            developer: "Developer"
+            publisher: "Publisher"
+
+            stores:
+                web:
+                    bool: false
+                    text: "Website"
+                    icon: ""
+                    url: "condorhalcon.github.io"
+                github:
+                    bool: false
+                    text: "GitHub"
+                    icon: ""
+                    url: "https://github.com"
+                steam:
+                    bool: false
+                    text: "Steam"
+                    icon: ""
+                    url: "https://store.steampowered.com"
+                epicgames:
+                    bool: false
+                    text: "Epic Games"
+                    icon: ""
+                    url: "https://www.epicgames.com/"
+                itch:
+                    bool: false
+                    text: "itch.io"
+                    icon: ""
+                    url: "https://itch.io/"
+
+# For running jekyll localy
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com

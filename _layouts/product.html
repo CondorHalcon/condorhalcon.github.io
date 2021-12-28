@@ -4,9 +4,39 @@ layout: default
 
 <div class="product-page">
     <h1>{{page.title}}</h1>
-    <ul>
-        <li><strong>Developer: </strong>{{page.developer}}</li>
-        <li><strong>Publisher: </strong>{{page.publisher}}</li>
-    </ul>
-    {{ content }}
+    <div class="product-info">
+        <div class="product-column-left">
+            <img src={{page.image}} alt="image" style="background-color: #202020; width: 100%; height: auto;"/>
+        </div>
+        <div class="product-column-right">
+            <ul class="product-info">
+                <li><strong>Developer: </strong>{{page.developer}}</li>
+                <li><strong>Publisher: </strong>{{page.publisher}}</li>
+            </ul>
+            
+            <div class="store-links">
+                {% if {{page.stores.web.bool}} or {{page.stores.github.bool}} or {{page.stores.steam.bool}} or {{page.stores.epicgames.bool}} or {{page.stores.itch.bool}} %}
+                <p class="store-links"><strong>Get</strong></p>
+                {% endif %}
+                {% if {{page.stores.web.bool}} %}
+                <a class="button web" href="{{page.stores.web.url}}">{{page.stores.web.text}}</a>
+                {% endif %}
+                {% if {{page.stores.github.bool}} %}
+                <a class="button github" href="{{page.stores.github.url}}">{{page.stores.github.text}}</a>
+                {% endif %}
+                {% if {{page.stores.steam.bool}} %}
+                <a class="button steam" href="{{page.stores.steam.url}}">{{page.stores.steam.text}}</a>
+                {% endif %}
+                {% if {{page.stores.epicgames.bool}} %}
+                <a class="button epicgames" href="{{page.stores.epicgames.url}}">{{page.stores.epicgames.text}}</a>
+                {% endif %}
+                {% if {{page.stores.itch.bool}} %}
+                <a class="button itch" href="{{page.stores.itch.url}}">{{page.stores.itch.text}}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        {{ content }}
+    </div>
 </div>
