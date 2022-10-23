@@ -7,14 +7,14 @@ image: /assets/png/ch-unityvscode-snippets-img1.png
 developer: "CondorHalcon"
 publisher: "CondorHalcon"
 
+product:
+    logo: /assets/logos/Visual_Studio_Code.png
+    involement: "Full development of the extention."
+
 stores:
     github:
         bool: true
         url: "https://github.com/CondorHalcon/CH-UnityVSCode-Snippets"
 ---
 
-## About
 Unity VSCode Snippets is a Unity C# snippet extention built for VSCode.
-
-## My Involvement
-Full development of the extention.

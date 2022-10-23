@@ -3,21 +3,18 @@ layout: default
 ---
 
 <div class="product-page">
-    <h1>{{page.title}}</h1>
+    
     <div class="product-info">
         <div class="product-column-left">
-            <img src={{page.image}} alt="image" style="background-color: #202020; width: 100%; height: auto;"/>
+            <img class="product-cover" src="{{page.product.cover}}" alt="product front cover image"/>
         </div>
         <div class="product-column-right">
-            <ul class="product-info">
-                <li><strong>Developer: </strong>{{page.developer}}</li>
-                <li><strong>Publisher: </strong>{{page.publisher}}</li>
-            </ul>
-            
+            <h1>{{page.title}}</h1>
+            <p class="product-short">{{page.product.short}}</p>
             <div class="store-links">
-                {% if {{page.stores.web.bool}} or {{page.stores.github.bool}} or {{page.stores.steam.bool}} or {{page.stores.epicgames.bool}} or {{page.stores.itch.bool}} %}
+                <!--{% if {{page.stores.web.bool}} or {{page.stores.github.bool}} or {{page.stores.steam.bool}} or {{page.stores.epicgames.bool}} or {{page.stores.itch.bool}} %}-->
                 <p class="store-links"><strong>Get</strong></p>
-                {% endif %}
+                <!--{% endif %}-->
                 {% if {{page.stores.web.bool}} %}
                 <a class="button web" href="{{page.stores.web.url}}">{{page.stores.web.text}}</a>
                 {% endif %}
@@ -36,7 +33,27 @@ layout: default
             </div>
         </div>
     </div>
-    <div class="description">
+    <div>
+        <div class="bubble product-bubble">
+            <p class="false-header"><strong>Developer</strong></p>
+            <p>{{page.product.developer}}</p>
+        </div>
+        <div class="bubble product-bubble">
+            <p class="false-header"><strong>Publisher</strong></p>
+            <p>{{page.product.publisher}}</p>
+        </div>
+    </div>
+    <div class="screenshot-bar">
+        {% for item in page.product.screenshots %}
+          <img class="product-screenshot" src="{{item}}" alt="product screenshot">
+        {% endfor %}
+    </div>
+    <div class="bubble">
+        <h2>About</h2>
         {{ content }}
+    </div>
+    <div class="bubble">
+        <h2>My Involvement</h2>
+        <p>{{page.product.involement}}</p>
     </div>
 </div>

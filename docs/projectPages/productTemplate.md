@@ -3,8 +3,16 @@ layout: product
 title: "Product"
 permalink: /project/product
 
-developer: "Developer"
-publisher: "Publisher"
+product:
+    cover: /assets/png/default_cover_pic.png
+    developer: "Developer"
+    publisher: "Publisher"
+    short: "This is a short product description"
+    involement: "This describes my part and work in the project."
+    screenshots:
+        - /assets/png/default_screenshot_pic.png
+        - /assets/png/default_screenshot_pic.png
+        - /assets/png/default_screenshot_pic.png
 
 stores:
     web:
@@ -20,8 +28,4 @@ stores:
         bool: true
 ---
 
-## About
-This is the product description.
-
-## My Involvement
-This describes my part and work in the project.
+This is the full product description.

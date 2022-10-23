@@ -34,9 +34,13 @@ defaults:
             title: "Product"
             maintenancePage: false
 
-            image: data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=
-            developer: "Developer"
-            publisher: "Publisher"
+            product:
+                cover: /assets/png/default_cover_pic.png
+                developer: "Developer"
+                publisher: "Publisher"
+                short: "This is a short product description"
+                involement: "This describes my part and work in the project."
+                screenshots: [/assets/png/default_screenshot_pic.png]
 
             stores:
                 web:
