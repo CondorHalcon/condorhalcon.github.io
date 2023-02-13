@@ -1,4 +1,14 @@
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGFGZMJSVH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VGFGZMJSVH');
+    </script>
+    
     {% if {{site.inMaintenance}} and {{page.maintenancePage}} == false %}
     <title>{{page.title}} | {{site.title}}</title>
     <meta http-equiv="refresh" content="0; URL=/maintenance">
