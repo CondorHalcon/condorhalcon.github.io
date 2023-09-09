@@ -19,6 +19,11 @@ webhost:
 defaults:
     -
         scope:
+            path: ""
+        values:
+            layout: "default"
+    -
+        scope:
             path: "docs"
             type: "pages"
         values:
@@ -27,18 +32,18 @@ defaults:
             maintenancePage: false
     -
         scope:
-            path: "docs/projectPages"
-            type: "pages"
+            path: ""
+            type: "posts"
         values:
-            layout: "product"
-            title: "Product"
+            layout: "post"
+            title: "Project"
             maintenancePage: false
 
-            product:
+            project:
                 cover: /assets/png/default_cover_pic.png
-                developer: "Developer"
-                publisher: "Publisher"
-                short: "This is a short product description"
+                developer: "~Developer"
+                publisher: "~Publisher"
+                short: "~This is a short project description"
                 involement: "This describes my part and work in the project."
                 screenshots: [/assets/png/default_screenshot_pic.png]
 
@@ -68,7 +73,3 @@ defaults:
                     text: "itch.io"
                     icon: ""
                     url: "https://itch.io/"
-
-# For running jekyll localy
-#baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com

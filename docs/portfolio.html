@@ -4,9 +4,17 @@ permalink: /portfolio
 ---
 
 <h1>Portfolio</h1>
-<div class="project-listing bubble">
-    <h3>CH UnityVSCode Snippets</h3>
-    <p>Unity VSCode Snippets is a Unity C# snippet extention built for VSCode.</p>
-    <img class="project-listing-image" src="/assets/png/ch-unityvscode-snippets-img1.png" alt="project image">
-    <a class="button project-listing-button" href="/project/ch-unityvscode-snippets">More</a>
+{% for post in site.posts %}
+
+<div class="container project-entry">
+    <!-- Project Entry -->
+    <img class="project-listing-entry" src="/assets/png/ch-unityvscode-snippets-img1.png" alt="project image">
+    <div class="project-listing-entry">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <a class="button" href="{{ post.url }}">More</a>
+    </div>
 </div>
+<br>
+
+{% endfor %}

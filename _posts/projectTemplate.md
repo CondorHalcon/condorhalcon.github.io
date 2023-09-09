@@ -1,9 +1,9 @@
 ---
-layout: product
-title: "Product"
-permalink: /project/product
+layout: post
+title: "Project"
+permalink: /project/project
 
-product:
+project:
     cover: /assets/png/default_cover_pic.png
     developer: "Developer"
     publisher: "Publisher"

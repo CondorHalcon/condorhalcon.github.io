@@ -2,18 +2,23 @@
 title: "Home"
 permalink: /home
 ---
+<div class="container">
+    <h2 class="home-title">About</h2>
+    <p>{{site.description}}</p>
+</div>
+<br>
 
-<div class="home-page">
-    <div class="about-feature bubble">
-        <h1>About</h2>
-        <p>{{site.description}}</p>
-    </div>
-    <br>
-    <div class="project-listing bubble">
-        <h1>Featured</h2>
-        <h3>CH UnityVSCode Snippets</h3>
-        <p class="project-listing-text">Unity VSCode Snippets is a VSCode snippet extention built for Unity C#.</p>
-        <img class="project-listing-image" src="/assets/png/ch-unityvscode-snippets-img1.png" alt="project image">
-        <a class="button project-listing-button" href="/project/ch-unityvscode-snippets">More</a>
+{% for post in site.posts offset:1 limit:1 %}
+
+<!-- Project Entry -->
+<div class="container project-entry">
+    <img class="project-listing-entry" src="/assets/png/ch-unityvscode-snippets-img1.png" alt="project image">
+    <div class="project-listing-entry">
+        <h2><span class="home-title">Featured </span>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <a class="button" href="{{ post.url }}">More</a>
     </div>
 </div>
+<br>
+
+{% endfor %}

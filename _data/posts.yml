@@ -1,0 +1,9 @@
+defaults:
+    -
+        scope:
+            path: "docs"
+            type: "pages"
+        values:
+            layout: "default"
+            title: "Page"
+            maintenancePage: false
