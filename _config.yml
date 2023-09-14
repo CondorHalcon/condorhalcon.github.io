@@ -48,7 +48,7 @@ defaults:
                 publisher: "~Publisher"
                 short: "~This is a short project description"
                 involement: "This describes my part and work in the project."
-                screenshots: [/assets/png/default_screenshot_pic.png]
+                screenshots: [/assets/png/placeholder_FHD.png]
 
             stores:
                 web:
