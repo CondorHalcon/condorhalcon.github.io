@@ -123,9 +123,6 @@ main {
     display: table;
     clear: both;
 }
-.container { /* TODO: complete containers */
-    min-height: 1px;
-}
 div.site-maintenance {
     margin: 0%;
     text-align: center;

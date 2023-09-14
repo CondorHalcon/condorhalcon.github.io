@@ -22,22 +22,25 @@ defaults:
             path: ""
         values:
             layout: "default"
-    -
-        scope:
-            path: "docs"
-            type: "pages"
-        values:
-            layout: "default"
-            title: "Page"
             maintenancePage: false
+            class: all
     -
         scope:
             path: ""
+            type: "pages"
+        values:
+            layout: "default"
+            maintenancePage: false
+            class: page
+    -
+        scope:
+            path: "_posts/"
             type: "posts"
         values:
             layout: "post"
-            title: "Project"
             maintenancePage: false
+            title: "Project"
+            class: post
 
             project:
                 cover: /assets/png/default_cover_pic.png
@@ -52,7 +55,7 @@ defaults:
                     bool: false
                     text: "Website"
                     icon: ""
-                    url: "condorhalcon.github.io"
+                    url: "https://condorhalcon.com"
                 github:
                     bool: false
                     text: "GitHub"

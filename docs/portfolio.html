@@ -6,7 +6,7 @@ permalink: /portfolio
 <h1>Portfolio</h1>
 {% for post in site.posts %}
 
-<div class="container project-entry">
+<section class="project-entry">
     <!-- Project Entry -->
     <img class="project-listing-entry" src="/assets/png/ch-unityvscode-snippets-img1.png" alt="project image">
     <div class="project-listing-entry">
@@ -14,7 +14,7 @@ permalink: /portfolio
         <p>{{ post.excerpt }}</p>
         <a class="button" href="{{ post.url }}">More</a>
     </div>
-</div>
+</section>
 <br>
 
 {% endfor %}
