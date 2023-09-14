@@ -43,7 +43,7 @@ defaults:
             class: post
 
             project:
-                cover: /assets/png/default_cover_pic.png
+                cover: /assets/png/placeholder_cover.png
                 developer: "~Developer"
                 publisher: "~Publisher"
                 short: "~This is a short project description"
