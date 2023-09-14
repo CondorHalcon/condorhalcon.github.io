@@ -3,7 +3,7 @@ title: "Home"
 permalink: /home
 ---
 <section>
-    <h2 class="home-title">About</h2>
+    <h2>About</h2>
     <p>{{site.description}}</p>
 </section>
 <br>
@@ -11,10 +11,10 @@ permalink: /home
 {% for post in site.posts offset:1 limit:1 %}
 
 <!-- Project Entry -->
-<section class="project-entry">
-    <img class="project-listing-entry" src="/assets/png/ch-unityvscode-snippets-img1.png" alt="project image">
-    <div class="project-listing-entry">
-        <h2><span class="home-title">Featured </span>{{ post.title }}</h2>
+<section>
+    <img src="{{ post.project.screenshots[0] }}" alt="project image">
+    <div>
+        <h2><span>Featured </span>{{ post.title }}</h2>
         <p>{{ post.excerpt }}</p>
         <a class="button" href="{{ post.url }}">More</a>
     </div>

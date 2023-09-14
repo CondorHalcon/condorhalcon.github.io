@@ -1,0 +1,20 @@
+---
+title: "Portfolio"
+permalink: /portfolio
+---
+
+<h1>Portfolio</h1>
+{% for post in site.posts %}
+
+<section>
+    <!-- Project Entry -->
+    <img src="{{ post.project.screenshots[0] }}" alt="project image">
+    <div >
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url }}">More</a>
+    </div>
+</section>
+<br>
+
+{% endfor %}

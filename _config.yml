@@ -22,7 +22,6 @@ defaults:
             path: ""
         values:
             layout: "default"
-            maintenancePage: false
             class: all
     -
         scope:
@@ -30,7 +29,6 @@ defaults:
             type: "pages"
         values:
             layout: "default"
-            maintenancePage: false
             class: page
     -
         scope:
@@ -38,7 +36,6 @@ defaults:
             type: "posts"
         values:
             layout: "post"
-            maintenancePage: false
             title: "Project"
             class: post
 
@@ -46,8 +43,6 @@ defaults:
                 cover: /assets/png/placeholder_cover.png
                 developer: "~Developer"
                 publisher: "~Publisher"
-                short: "~This is a short project description"
-                involement: "This describes my part and work in the project."
                 screenshots: [/assets/png/placeholder_FHD.png]
 
             stores:
