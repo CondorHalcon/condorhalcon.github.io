@@ -2,41 +2,41 @@
 title: "Home"
 permalink: /home
 ---
-<section>
-    <p><span>public static int</span> <span>Bored</span>(<span>bool</span> exhausted)<br>
-        {<br>
-            <span>int</span> happiness;<br>
-            <span>if</span> (!exhausted)<br>
-            {<br>
-                <span>Program</span>();<br>
-            } <span>else</span> <br>
-            {<br>
-                <span>PlayVideoGame</span>();<br>
-            }<br>
-            happiness = <span>Mathf</span>.infinity;<br>
-            <span>return</span> happiness;<br>
-        }
-    </p>
+<section class="landing">
+    <div>
+        <p class="code"><span class="code-type">public static int</span> <span class="code-method">Bored</span>(<span class="code-type">bool</span> exhausted)</p>
+        <p class="code">{</p>
+        <p class="code" style="text-indent: 25px;"><span class="code-type">int</span> happiness;</p>
+        <p class="code" style="text-indent: 25px;"><span class="code-key">if</span> (!exhausted)</p>
+        <p class="code" style="text-indent: 25px;">{</p>
+        <p class="code" style="text-indent: 50px;"><span class="code-method">Program</span>();</p>
+        <p class="code" style="text-indent: 50px;">happiness = 1000;</p>
+        <p class="code" style="text-indent: 25px;">} <span class="code-key">else</span></p>
+        <p class="code" style="text-indent: 25px;">{</p>
+        <p class="code" style="text-indent: 50px;"><span class="code-method">PlayVideoGame</span>();</p>
+        <p class="code" style="text-indent: 50px;">happiness = <span class="code-method">Mathf</span>.infinity;</p>
+        <p class="code" style="text-indent: 25px;">}</p>
+        <p class="code" style="text-indent: 25px;"><span class="code-key">return</span> happiness;</p>
+        <p class="code">}</p>
+    </div>
 </section>
 
 <section>
     <h2>About</h2>
     <p>This site is a Portfolio for CondorHalcon.</p>
 </section>
-<br>
 
 {% for post in site.posts offset:1 limit:1 %}
 
 <!-- Project Entry -->
-<section>
-    <img src="{{ post.project.screenshots[0] }}" alt="project image">
+<section class="feature">
     <div>
         <h2><span>Featured </span>{{ post.title }}</h2>
         <p>{{ post.excerpt }}</p>
         <a class="button" href="{{ post.url }}">More</a>
     </div>
+    <img src="{{ post.project.screenshots[0] }}" alt="project image">
 </section>
-<br>
 
 {% endfor %}
 

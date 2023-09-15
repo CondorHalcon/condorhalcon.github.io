@@ -1,8 +1,9 @@
-/* DEFAULT STYLING */
+/* DEFAULT GLOBAL STYLING */
 :root {
     --color-60: #ebebeb;
     --color-30: #141414;
     --color-10: #119DA4;
+    --color-60-shaded: #cfcfcf;
     --color-30-hover: #292929;
     --color-10-hover: #08474a;
 }
@@ -36,7 +37,21 @@ button:hover, .button:hover {
     background-color: var(--color-10-hover);
 }
 
-/* text */
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--color-60); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-30); 
+    border-radius: 10px;
+}
+
+/* GLOBAL TEXT */
 h1 {
     font-size: 50px;
     text-align: center;
@@ -63,22 +78,87 @@ h1.page-title {
 .home-title {
     color: var(--color-30);
 }
+/* Global Elements End HERE*/
 
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+/* SECTIONS */
+header {
+    background-color: var(--color-30);
+    border-bottom: 1px solid var(--color-60);
+    min-height: 50px;
+    height: fit-content;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0 10%;
 }
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--color-60); 
-    border-radius: 10px;
+section {
+    min-height: 500px;
+    padding: 50px 10%;
 }
-::-webkit-scrollbar-thumb {
-    background: var(--color-30); 
-    border-radius: 10px;
+footer {
+    background-color: var(--color-30);
+    padding: 10px 10% 50px 10%;
+}
+/* Header */
+header {
+    list-style-type: none;
+    height: 80px;
+    display: flex;
+}
+header > a {
+    color: var(--color-60);
+    padding: 0 10px;
+    text-decoration: none;
+    padding-top: 30px;
+}
+header > a.nav-item:hover {
+    background-color: var(--color-30-hover);
+}
+#header-blank {
+    flex-grow: 1;
 }
 
-/* store links */
+/* Footer */
+ul.site-contact {
+    list-style-type: none;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 40px;
+}
+footer, .site-contact > li > strong, footer > a, .site-contact > strong, .github-credits {
+    color: var(--color-60);
+}
+.github-credits, .github-credits > a {
+    font-size: 10px;
+}
+
+/* Landing */
+section.landing {
+    background-image: url(/assets/png/pexels-borja-lopez-1346154.jpg);
+    background-color: var(--color-30);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-60);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section.landing > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.code { color: white; margin: 2px 0px 2px 0px; }
+.code-key { color: purple; }
+.code-method { color: greenyellow; }
+.code-type { color: teal; }
+
+section.feature {
+    background-color: var(--color-60-shaded);
+}
+
+/* STORE LINKS */
 .store {
     width: 100px;
 }
