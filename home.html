@@ -3,8 +3,25 @@ title: "Home"
 permalink: /home
 ---
 <section>
+    <p><span>public static int</span> <span>Bored</span>(<span>bool</span> exhausted)<br>
+        {<br>
+            <span>int</span> happiness;<br>
+            <span>if</span> (!exhausted)<br>
+            {<br>
+                <span>Program</span>();<br>
+            } <span>else</span> <br>
+            {<br>
+                <span>PlayVideoGame</span>();<br>
+            }<br>
+            happiness = <span>Mathf</span>.infinity;<br>
+            <span>return</span> happiness;<br>
+        }
+    </p>
+</section>
+
+<section>
     <h2>About</h2>
-    <p>{{site.description}}</p>
+    <p>This site is a Portfolio for CondorHalcon.</p>
 </section>
 <br>
 
@@ -22,3 +39,5 @@ permalink: /home
 <br>
 
 {% endfor %}
+
+{%- include contact.html -%}

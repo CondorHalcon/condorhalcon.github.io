@@ -10,8 +10,6 @@ contact:
     github:
         tag: "@CondorHalcon"
         url: "https://github.com/CondorHalcon"
-description: >
-    This site is a Portfolio for CondorHalcon.
 webhost:
     name: "Github Pages"
     url: "https://pages.github.com/"
