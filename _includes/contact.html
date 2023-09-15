@@ -1,0 +1,20 @@
+<section>
+    <h2>
+        Contact Me
+    </h2>
+    <form action="https://formspree.io/f/xknlzbng" method="POST">
+        <input type="hidden" name="_subject" value="Contact request from CondorHalcon.com">
+        <input type="text" name="_name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Type your message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <div>
+        <img src="/assets/png/placeholder_icon.png" alt="discord logo">
+        <p><a href="{{site.contact.discord.url}}">Join Discord</a></p>
+        <img src="/assets/png/placeholder_icon.png" alt="email icon">
+        <p>{{site.contact.email2}}</p>
+        <img src="/assets/png/placeholder_icon.png" alt="github icon">
+        <p><a href="{{site.contact.github.url}}">@CondorHalcon</a></p>
+    </div>
+</section>
