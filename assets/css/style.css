@@ -141,18 +141,25 @@ section.landing {
     background-size: cover;
     color: var(--color-60);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 section.landing > div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 .code { color: white; margin: 2px 0px 2px 0px; }
 .code-key { color: purple; }
 .code-method { color: greenyellow; }
 .code-type { color: teal; }
+#name, #alias { text-align: center; }
+#name { color: var(--color-10); }
+#alias { color: var(--color-60); }
+#aka {
+    color: var(--color-10);
+    font-size: 25px;
+}
 
 section.feature {
     background-color: var(--color-60-shaded);
