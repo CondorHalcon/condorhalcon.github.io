@@ -131,7 +131,7 @@ ul.site-contact {
     margin: 0px 0px 20px 0px;
     padding: 0px 40px;
 }
-footer, .site-contact > li > strong, footer > a, .site-contact > strong, .github-credits {
+footer, ul.site-contact > li > strong, ul.site-contact > li > a, .site-contact > strong, .github-credits {
     color: var(--color-60);
 }
 .github-credits, .github-credits > a {
@@ -210,14 +210,47 @@ section.contact > div > form > input, #contact-message{
     border-radius: 50px;
 }
 
+/* PROJECT PAGE */
+/* Project Info */
+section.project-info {
+    min-height: 30vh;
+    display: flex;
+    gap: 20px;
+}
+section.project-info > img {
+    display: block;
+    margin-bottom: auto;
+    max-height: 30vh;
+    max-width: 30vw;
+}
+section.project-info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+div.project-info {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+/* Project Media */
+section.project-media {
+    background-color: var(--color-60-shaded);
+    display: flex;
+    gap: 5px;
+}
+section.project-media > img{
+    width: 80%;
+}
+
 /* STORE LINKS */
 .store {
     width: 100px;
 }
 .web {
-    background-color: #ffffff;
-    color: black;
-} .web:hover { background-color: #ffffffd0; }
+    background-color: var(--color-10);
+    color: var(--color-30);
+} .web:hover { background-color: var(--color-10-hover); }
 .github {
     background-color: #24292f;
     color: #bdbdbd;
