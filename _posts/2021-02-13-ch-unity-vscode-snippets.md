@@ -1,15 +1,16 @@
 ---
-layout: product
+layout: post
+author: CondorHalcon
 title: "CH UnityVSCode Snippets"
 permalink: /project/ch-unityvscode-snippets
 
-image: /assets/png/ch-unityvscode-snippets-img1.png
 developer: "CondorHalcon"
 publisher: "CondorHalcon"
 
-product:
-    logo: /assets/logos/Visual_Studio_Code.png
+project:
+    cover: /assets/png/unity-vscode-snippets-cover.png
     involement: "Full development of the extention."
+    screenshots: [/assets/png/ch-unityvscode-snippets-img1.png]
 
 stores:
     github:

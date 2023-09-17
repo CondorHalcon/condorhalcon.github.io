@@ -3,15 +3,13 @@ titlecaps: "CONDORHALCON"
 inMaintenance: false
 contact:
     name: "CondorHalcon"
-    email2: "condorhalcon20@gmail.com"
+    email: "condorhalcon20@gmail.com"
     discord:
         text: "discord.gg/x7qNK3e447"
         url: "https://discord.gg/x7qNK3e447"
     github:
         tag: "@CondorHalcon"
         url: "https://github.com/CondorHalcon"
-description: >
-    This site is a Portfolio for CondorHalcon.
 webhost:
     name: "Github Pages"
     url: "https://pages.github.com/"
@@ -19,35 +17,38 @@ webhost:
 defaults:
     -
         scope:
-            path: "docs"
+            path: ""
+        values:
+            layout: "default"
+            class: all
+    -
+        scope:
+            path: ""
             type: "pages"
         values:
             layout: "default"
-            title: "Page"
-            maintenancePage: false
+            class: page
     -
         scope:
-            path: "docs/projectPages"
-            type: "pages"
+            path: "_posts/"
+            type: "posts"
         values:
-            layout: "product"
-            title: "Product"
-            maintenancePage: false
+            layout: "post"
+            title: "Project"
+            class: post
 
-            product:
-                cover: /assets/png/default_cover_pic.png
-                developer: "Developer"
-                publisher: "Publisher"
-                short: "This is a short product description"
-                involement: "This describes my part and work in the project."
-                screenshots: [/assets/png/default_screenshot_pic.png]
+            project:
+                cover: /assets/png/placeholder_cover.png
+                developer: "~Developer"
+                publisher: "~Publisher"
+                screenshots: [/assets/png/placeholder_FHD.png]
 
             stores:
                 web:
                     bool: false
                     text: "Website"
                     icon: ""
-                    url: "condorhalcon.github.io"
+                    url: "https://condorhalcon.com"
                 github:
                     bool: false
                     text: "GitHub"
@@ -68,7 +69,3 @@ defaults:
                     text: "itch.io"
                     icon: ""
                     url: "https://itch.io/"
-
-# For running jekyll localy
-#baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com

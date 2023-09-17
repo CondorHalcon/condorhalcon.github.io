@@ -9,16 +9,8 @@
       gtag('config', 'G-VGFGZMJSVH');
     </script>
     
-    {% if {{site.inMaintenance}} and {{page.maintenancePage}} == false %}
-    <title>{{page.title}} | {{site.title}}</title>
-    <meta http-equiv="refresh" content="0; URL=/maintenance">
-    {% elsif {{site.inMaintenance}} == false and {{page.maintenancePage}} %}
-    <title>{{page.title}} | {{site.title}}</title>
-    <meta http-equiv="refresh" content="0; URL=/home">
-    {% else %}
     <meta charset="utf-8">
     <title>{{page.title}} | {{site.title}}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    {% endif %}
+    <link rel="shortcut icon" type="image/png" href="/assets/logos/favicon.png">
 </head>

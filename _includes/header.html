@@ -1,11 +1,8 @@
 <header>
-    <ul class="nav-object">
-        {% if {{site.inMaintenance}} %}
-        <li class="nav-title"><a href="/maintenance">{{site.titlecaps}}</a></li>
-        {% else %}
-        <li class="nav-title"><a href="/home">{{site.titlecaps}}</a></li>
-        <li class="nav-item"><a href="/portfolio">Portfolio</a></li>
-        <li class="nav-item"><a href="/about">About Me</a></li>
-        {% endif %}
-    </nav>
+    <a href="/home">{{site.titlecaps}}</a>
+    <a id="header-blank"></a>
+    <a class="nav-item" href="/home#about">About</a>
+    <a class="nav-item" href="/home#contact">Contact</a>
+    <a class="nav-item" href="/home#featured">Feature</a>
+    <a class="nav-item" href="/portfolio">Portfolio</a>
 </header>

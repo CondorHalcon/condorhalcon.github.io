@@ -1,10 +1,18 @@
-/* DEFAULT STYLING */
+/* DEFAULT GLOBAL STYLING */
+:root {
+    --color-60: #ebebeb;
+    --color-30: #141414;
+    --color-10: #119DA4;
+    --color-60-shaded: #cfcfcf;
+    --color-30-hover: #292929;
+    --color-10-hover: #08474a;
+}
 * {
-    color: white;
+    color: var(--color-30);
     font-family: 'Courier New', Courier, monospace;
 }
 body {
-    background-color: rgb(40, 40, 40);
+    background-color: var(--color-60);
     margin: 0;
     bottom: 0;
     padding: 0;
@@ -15,8 +23,8 @@ body {
     display: flex;
     flex-direction: column;
 }
-button {
-    background-color: black;
+button, .button{
+    background-color: var(--color-10);
     border-radius: 2px 10px 2px 10px;
     margin: 3px 0px;
     border: 3px;
@@ -24,217 +32,234 @@ button {
     text-align: center;
     display: inline-block;
     font-size: 12px;
+    text-decoration: none;
+}
+button:hover, .button:hover {
+    background-color: var(--color-10-hover);
 }
 
-/* Scrollbar */
+/* SCROLLBAR */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(80, 80, 80); 
+    box-shadow: inset 0 0 5px var(--color-60); 
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(80, 80, 80); 
+    background: var(--color-30); 
     border-radius: 10px;
 }
 
-/* SPECIFIC STYLING */
-
-/* header & nav */
-header {
-    background-color: rgb(50, 50, 50);
-    border-bottom: 1px solid white;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-ul.nav-object {
-    list-style-type: none;
-    margin: 0 10%;
-    padding: 0;
-    overflow: hidden;
-}
-li.nav-item {
-    float: right;
-    border-left: 1px dotted white;
-}
-li.nav-title {
-    float: left;
-}
-li.nav-item a,li.nav-title a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li.nav-item a:hover {
-    background-color: darkgray;
-}
-
-/* main */
-main {
-    margin: 0 10%;
-    margin-bottom: 30px;
-    content: "";
-    display: table;
-    clear: both;
-}
-div.site-maintenance {
-    margin: 0%;
-    text-align: center;
-}
-div.bubble {
-    background-color: rgb(80, 80, 80);
-    padding: 1% 2%;
-    border-radius: 15px;
-    margin: 10px 0px 0px 0px;
-}
-a.button {
-    background-color: black;
-    border-radius: 2px 10px 2px 10px;
-    margin: 3px 0px;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 12px;
-    text-decoration: none;
-}
-
-/* product page */
-div.product-info {
-    display: flex;
-    flex-direction: row;
-    height: fit-content;
-}
-div.product-column-left {
-    width: auto;
-    height: 300px;
-}
-div.product-column-right {
-    margin: 0px 0px 0px 15px;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-}
-div.discription {
-    content: "";
-    display: table;
-    clear: both;
-}
-ul.product-info {
-    list-style-type: none;
-    padding: 0;
-}
-div.store-links {
-    padding: 0;
-    bottom: 0;
-    margin-top: auto;
-}
-p.store-links {
-    margin-top: 10px;
-    margin-bottom: 1px;
-}
-p.false-header {
-    margin: 10px 0px;
-}
-div.description {
-    margin: 0;
-}
-img.product-cover {
-    background-color: #202020;
-    width: auto;
-    height: 100%;
-    border-radius: 15px;
-}
-img.project-listing-image {
-    max-width: 50%;
-    height: auto;
-}
-p.project-listing-text {
-    display: flexbox;
-}
-a.project-listing-button {
-    bottom: 0;
-    margin-top: auto;
-}
-div.product-bubble {
-    display: inline-block;
-    border-radius: 2px 15px 2px 15px;
-    min-width: 20%;
-}
-div.screenshot-bar {
-    overflow: auto;
-    white-space: nowrap;
-    height: 400px;
-    width: auto;
-    margin: 5px 0;
-    padding: 5px 0;
-}
-img.product-screenshot {
-    height: 90%;
-}
-div.screenshot-bar img.product-screenshot {
-    display: inline-block;
-}
-
-/* footer */
-footer {
-    border-top: 1px solid white;
-    margin: 0;
-    padding: 0% 10%;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-
-    margin-top: auto;
-}
-.site-contact {
-    margin: 0;
-}
-p.site-contact {
-    margin-top: 2%;
-}
-ul.site-contact {
-    list-style-type: none;
-    margin-bottom: 2%;
-}
-.github-credits {
-    font-size: 10px;
-    margin-bottom: 2%;
-}
-
-/* store links */
-a.web {
-    background-color: #ffffff;
-    color: black;
-} a.web:hover { background-color: #ffffffd0; }
-a.github {
-    background-color: #24292f;
-    color: #bdbdbd;
-} a.steam:hover { background-color: #171a21d2; }
-a.epicgames {
-    background-color: #2a2a2a;
-    color: #e7e7e7;
-} a.epicgames:hover { background-color: #2a2a2ad5; }
-a.itch {
-    background-color: #FF2449;
-    color: white;
-} a.itch:hover { background-color: #ff2448d7; }
-
-/* text */
+/* GLOBAL TEXT */
 h1 {
+    font-size: 50px;
+    text-align: center;
     width: 100%;
-    margin-top: 0;
+    margin-top: 50px;
 }
 h2 {
+    color: var(--color-10);
+    font-size: 50px;
     width: 100%;
     margin: 10px 0px 2px 0px;
+}
+h3 {
+    width: 100%;
+    margin-top: 0;
 }
 p {
     margin: 2px 0px 10px 0px
 }
+h1.page-title {
+    width: 100%;
+    margin-top: 0;
+}
+.home-title {
+    color: var(--color-30);
+}
+/* Global Elements End HERE*/
+
+/* SECTIONS */
+header {
+    background-color: var(--color-30);
+    border-bottom: 1px solid var(--color-60);
+    min-height: 50px;
+    height: fit-content;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0 10%;
+}
+section {
+    min-height: 50vh;
+    padding: 5vh 10%;
+}
+footer {
+    background-color: var(--color-30);
+    padding: 10px 10% 50px 10%;
+}
+.section-title {
+    text-align: center;
+}
+#about, #featured, #contact{
+    margin: 20px;
+}
+/* Header */
+header {
+    list-style-type: none;
+    height: 80px;
+    display: flex;
+}
+header > a {
+    color: var(--color-60);
+    padding: 0 10px;
+    text-decoration: none;
+    padding-top: 30px;
+}
+header > a.nav-item:hover {
+    background-color: var(--color-30-hover);
+}
+#header-blank {
+    flex-grow: 1;
+}
+/* Footer */
+ul.site-contact {
+    list-style-type: none;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 40px;
+}
+footer, ul.site-contact > li > strong, ul.site-contact > li > a, .site-contact > strong, .github-credits {
+    color: var(--color-60);
+}
+.github-credits, .github-credits > a {
+    font-size: 10px;
+}
+
+/* Landing */
+section.landing {
+    background-image: url(/assets/png/pexels-borja-lopez-1346154.jpg);
+    background-color: var(--color-30);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-60);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+section.landing > div {
+    display: flex;
+    flex-direction: column;
+}
+.code { color: white; margin: 2px 0px 2px 0px; }
+.code-key { color: purple; }
+.code-method { color: greenyellow; }
+.code-type { color: teal; }
+#name, #alias { text-align: center; }
+#name { color: var(--color-10); }
+#alias { color: var(--color-60); }
+#aka {
+    color: var(--color-10);
+    font-size: 25px;
+}
+/* About */
+section.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Feature / Project Listing */
+section.feature, section.project-listing-darkened { background-color: var(--color-60-shaded); }
+section.project-listing {
+    display: flex;
+}
+section.project-listing > img {
+    margin-bottom: auto;
+    width: 50%;
+}
+/* Contact */
+section.contact > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+section.contact > div > form, #contact-links, #contact-links > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+section.contact > div > form {
+    width: 50%;
+}
+section.contact > div > form > input, #contact-message{
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+#contact-message {
+    height: 300px;
+}
+.circle-img {
+    height: 100px;
+    border-radius: 50px;
+}
+
+/* PROJECT PAGE */
+/* Project Info */
+section.project-info {
+    min-height: 30vh;
+    display: flex;
+    gap: 20px;
+}
+section.project-info > img {
+    display: block;
+    margin-bottom: auto;
+    max-height: 30vh;
+    max-width: 30vw;
+}
+section.project-info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+div.project-info {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+/* Project Media */
+section.project-media {
+    background-color: var(--color-60-shaded);
+    display: flex;
+    gap: 5px;
+}
+section.project-media > img{
+    width: 80%;
+}
+
+/* STORE LINKS */
+.store {
+    width: 100px;
+}
+.web {
+    background-color: var(--color-10);
+    color: var(--color-30);
+} .web:hover { background-color: var(--color-10-hover); }
+.github {
+    background-color: #24292f;
+    color: #bdbdbd;
+} .steam:hover { background-color: #171a21d2; }
+.epicgames {
+    background-color: #2a2a2a;
+    color: #e7e7e7;
+} .epicgames:hover { background-color: #2a2a2ad5; }
+.itch {
+    background-color: #FF2449;
+    color: white;
+} .itch:hover { background-color: #ff2448d7; }

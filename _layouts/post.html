@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<section class="project-info">
+    <img src="{{page.project.cover}}" alt="project front cover image"/>
+    <div>
+        <h2>{{page.title}}</h2>
+        {{page.excerpt}}
+        <div class="project-info">
+            <div>
+                <p><strong>Developer</strong></p>
+                <p>{{page.project.developer}}</p>
+            </div>
+            <div>
+                <p><strong>Publisher</strong></p>
+                <p>{{page.project.publisher}}</p>
+            </div>
+            <div>
+                {% if page.stores.web.bool or page.stores.github.bool or page.stores.steam.bool or page.stores.epicgames.bool or page.stores.itch.bool %}
+                <p><strong>Get</strong></p>
+                {% endif %}
+
+
+                {% if page.stores.web.bool %}
+                <a class="button web" href="{{page.stores.web.url}}" target="_blank">{{page.stores.web.text}}</a>
+                {% endif %}
+
+                {% if page.stores.github.bool %}
+                <a class="button github" href="{{page.stores.github.url}}" target="_blank">{{page.stores.github.text}}</a>
+                {% endif %}
+
+                {% if page.stores.steam.bool %}
+                <a class="button steam" href="{{page.stores.steam.url}}" target="_blank">{{page.stores.steam.text}}</a>
+                {% endif %}
+
+                {% if page.stores.epicgames.bool %}
+                <a class="button epicgames" href="{{page.stores.epicgames.url}}" target="_blank">{{page.stores.epicgames.text}}</a>
+                {% endif %}
+
+                {% if page.stores.itch.bool %}
+                <a class="button itch" href="{{page.stores.itch.url}}" target="_blank">{{page.stores.itch.text}}</a>
+                {% endif %}
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<section class="project-media">
+    {% for item in page.project.screenshots %}
+        <img src="{{item}}" alt="project screenshot">
+    {% endfor %}
+</section>
+
+<section>
+    {{ content }}
+</section>
