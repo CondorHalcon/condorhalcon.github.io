@@ -4,16 +4,21 @@ permalink: /portfolio
 ---
 
 <h1>Portfolio</h1>
-{% for post in site.posts %}
 
-<section>
+{% for post in site.posts %}
+{% assign num = forloop.index | modulo : 2 %}
+{% if num == 0 %}
+<section class="project-listing project-listing-darkened">
+{% else %}
+<section class="project-listing">
+{% endif %}
     <!-- Project Entry -->
-    <img src="{{ post.project.screenshots[0] }}" alt="project image">
     <div >
         <h2>{{ post.title }}</h2>
         <p>{{ post.excerpt }}</p>
-        <a href="{{ post.url }}">More</a>
+        <a class="button" href="{{ post.url }}">More</a>
     </div>
+    <img src="{{ post.project.screenshots[0] }}" alt="project image">
 </section>
 <br>
 
