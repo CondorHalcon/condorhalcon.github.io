@@ -15,6 +15,7 @@ project:
 stores:
     github:
         bool: true
+        text: GitHub
         url: "https://github.com/CondorHalcon/CH-UnityVSCode-Snippets"
 ---
 
