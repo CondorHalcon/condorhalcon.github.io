@@ -26,4 +26,4 @@ stores:
         bool: true
 ---
 
-This is the full product description.
+This is the product description.
