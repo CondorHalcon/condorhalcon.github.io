@@ -49,9 +49,11 @@ layout: default
 </section>
 
 <section class="project-media">
-    {% for item in page.project.screenshots %}
-        <img src="{{item}}" alt="project screenshot">
-    {% endfor %}
+    <div class="project-media">
+        {% for item in page.project.screenshots %}
+            <img src="{{item}}" alt="project screenshot">
+        {% endfor %}
+    </div>
 </section>
 
 <section>

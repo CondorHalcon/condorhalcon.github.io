@@ -246,6 +246,11 @@ section.project-media {
 section.project-media > img{
     width: 80%;
 }
+div.project-media {
+    overflow-x: scroll;
+    display: flex;
+    gap: 5px;
+}
 
 /* STORE LINKS */
 .store {
