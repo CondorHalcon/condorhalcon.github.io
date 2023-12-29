@@ -240,6 +240,7 @@ div.project-info {
 /* Project Media */
 section.project-media {
     background-color: var(--color-60-shaded);
+    max-height: 52vh;
     display: flex;
     gap: 5px;
 }

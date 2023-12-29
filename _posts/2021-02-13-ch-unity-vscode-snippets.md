@@ -6,10 +6,10 @@ permalink: /project/ch-unityvscode-snippets
 
 
 project:
-    cover: /assets/png/unity-vscode-snippets-cover.png
+    cover: /assets/png/unity-vscode-snippets/unity-vscode-snippets-cover.png
     developer: "CondorHalcon"
     publisher: "None"
-    screenshots: [/assets/png/ch-unityvscode-snippets-img1.png]
+    screenshots: [/assets/png/unity-vscode-snippets/ch-unityvscode-snippets-img1.png]
 
 stores:
     github:
