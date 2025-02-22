@@ -12,8 +12,8 @@ project:
     screenshots: [/assets/png/placeholder_FHD.png]
 
 stores:
-    github:
-        bool: true
+    -
+        tags: "github"
         text: GitHub
         url: "https://github.com/CondorHalcon/TradeME"
 ---

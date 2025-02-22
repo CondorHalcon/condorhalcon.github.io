@@ -12,8 +12,8 @@ project:
     screenshots: [/assets/png/unity-vscode-snippets/ch-unityvscode-snippets-img1.png]
 
 stores:
-    github:
-        bool: true
+    -
+        tags: "github"
         text: GitHub
         url: "https://github.com/CondorHalcon/CH-UnityVSCode-Snippets"
 ---

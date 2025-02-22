@@ -13,17 +13,9 @@ project:
         - /assets/png/placeholder_FHD.png
 
 stores:
-    web:
-        bool: true
+    -
+        tags: "web"
         text: "CondorHalcon"
-    github:
-        bool: true
-    steam:
-        bool: true
-    epicgames:
-        bool: true
-    itch:
-        bool: true
 ---
 
 This is the product description.

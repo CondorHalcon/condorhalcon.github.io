@@ -14,17 +14,8 @@ project:
         - https://img.itch.zone/aW1hZ2UvMjQzMzk0NC8xNDQxMTk5Mi5wbmc=/original/NRPh8E.png
 
 stores:
-    web:
-        bool: false
-        text: "CondorHalcon"
-    github:
-        bool: false
-    steam:
-        bool: false
-    epicgames:
-        bool: false
-    itch:
-        bool: true
+    -
+        tags: "itch"
         text: itch
         url: "https://mirrorabyss.itch.io/mirrors-of-the-abyss"
 ---

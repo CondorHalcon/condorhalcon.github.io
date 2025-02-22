@@ -276,9 +276,10 @@ div.project-media {
     background-color: var(--color-B-hover);
 }
 .github {
-    background-color: #24292f;
-    color: #bdbdbd;
-} .steam:hover { background-color: #171a21d2; }
+    background-color: #bdbdbd;
+    color: #24292f;
+} 
+.steam:hover { background-color: #171a21d2; }
 .epicgames {
     background-color: #2a2a2a;
     color: #e7e7e7;

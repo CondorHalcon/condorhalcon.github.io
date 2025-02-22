@@ -8,4 +8,6 @@
     - Icons (1:1)
 
 ## Local Testing
-> Ruby command: bundle exec jekyll serve
+1. Install Ruby and Jekyll as described at [Jekyll Installation](https://jekyllrb.com/docs/installation/)
+2. Ruby command `bundle install` to install needed jekyll files.
+3. Ruby command `bundle exec jekyll serve` to serve local site

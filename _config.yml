@@ -44,28 +44,28 @@ defaults:
                 screenshots: [/assets/png/placeholder_FHD.png]
 
             stores:
-                web:
-                    bool: false
+                -
+                    tags: "website"
                     text: "Website"
                     icon: ""
                     url: "https://condorhalcon.com"
-                github:
-                    bool: false
+                -
+                    tags: "github"
                     text: "GitHub"
                     icon: ""
                     url: "https://github.com"
-                steam:
-                    bool: false
+                -
+                    tags: "steam"
                     text: "Steam"
                     icon: ""
                     url: "https://store.steampowered.com"
-                epicgames:
-                    bool: false
+                -
+                    tags: "epicgames"
                     text: "Epic Games"
                     icon: ""
                     url: "https://www.epicgames.com/"
-                itch:
-                    bool: false
+                -
+                    tags: "itch"
                     text: "itch.io"
                     icon: ""
                     url: "https://itch.io/"

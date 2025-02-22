@@ -17,30 +17,14 @@ layout: default
                 <p>{{page.project.publisher}}</p>
             </div>
             <div>
-                {% if page.stores.web.bool or page.stores.github.bool or page.stores.steam.bool or page.stores.epicgames.bool or page.stores.itch.bool %}
+                {% if page.stores.length > 0 %}
                 <p><strong>Get</strong></p>
                 {% endif %}
 
 
-                {% if page.stores.web.bool %}
-                <a class="button web" href="{{page.stores.web.url}}" target="_blank">{{page.stores.web.text}}</a>
-                {% endif %}
-
-                {% if page.stores.github.bool %}
-                <a class="button github" href="{{page.stores.github.url}}" target="_blank">{{page.stores.github.text}}</a>
-                {% endif %}
-
-                {% if page.stores.steam.bool %}
-                <a class="button steam" href="{{page.stores.steam.url}}" target="_blank">{{page.stores.steam.text}}</a>
-                {% endif %}
-
-                {% if page.stores.epicgames.bool %}
-                <a class="button epicgames" href="{{page.stores.epicgames.url}}" target="_blank">{{page.stores.epicgames.text}}</a>
-                {% endif %}
-
-                {% if page.stores.itch.bool %}
-                <a class="button itch" href="{{page.stores.itch.url}}" target="_blank">{{page.stores.itch.text}}</a>
-                {% endif %}
+                {% for store in page.stores %}
+                <a class="button {{store.tags}}" href="{{store.url}}" target="_blank">{{store.text}}</a>
+                {% endfor %}
             </div>
         </div>
 

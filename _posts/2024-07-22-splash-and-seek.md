@@ -15,8 +15,8 @@ project:
         - /assets/png/splash-and-seek/splash-and-seek-lobby-island.png
 
 stores:
-    itch:
-        bool: true
+    -
+        tags: "itch"
         text: itch
         url: "https://aieseattle.itch.io/splashseek"
 ---

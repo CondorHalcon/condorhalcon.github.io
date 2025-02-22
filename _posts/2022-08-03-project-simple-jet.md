@@ -19,8 +19,8 @@ project:
 
 
 stores:
-    github:
-        bool: true
+    -
+        tags: "github"
         text: GitHub
         url: "https://github.com/CondorHalcon/project-simple-jet-sim"
 ---
