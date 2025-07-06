@@ -1,0 +1,30 @@
+@import "./theme";
+
+header {
+    background-color: $bg-color-B;
+    border-bottom: 1px solid $bg-color-B-border;
+    min-height: 50px;
+    height: fit-content;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0 10%;
+}
+header {
+    list-style-type: none;
+    height: 80px;
+    display: flex;
+}
+header > a {
+    color: $color-A;
+    padding: 0 10px;
+    text-decoration: none;
+    padding-top: 30px;
+}
+header > a.nav-item:hover {
+    background-color: $bg-color-B-hover;
+}
+#header-blank {
+    flex-grow: 1;
+}

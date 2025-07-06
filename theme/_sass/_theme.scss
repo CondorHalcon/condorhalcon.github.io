@@ -1,0 +1,26 @@
+$bg-color-A: rgb(35, 38, 40) !default;
+$bg-color-A-shaded: rgb(51, 55, 57) !default;
+$bg-color-B: rgb(20, 20, 20) !default;
+$bg-color-B-hover: rgb(41, 41, 41) !default;
+$bg-color-B-border: rgb(54, 58, 60) !default;
+$color-A: rgb(235, 235, 235) !default;
+$color-A-shaded: rgb(207, 207, 207) !default;
+$color-B: rgb(17, 157, 164) !default;
+$color-B-hover: rgb(8, 71, 74) !default;
+
+* {
+    color: $color-A;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: $bg-color-A;
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

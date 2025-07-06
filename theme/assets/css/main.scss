@@ -1,0 +1,155 @@
+---
+# This front matter tells Jekyll to process the SCSS file
+---
+
+@import "theme";
+@import "scrollbar";
+@import "text";
+@import "header";
+@import "footer";
+
+// components
+@import "components/buttons";
+@import "components/store_links";
+
+// specific styles
+h1.page-title {
+    width: 100%;
+    margin-top: 0;
+}
+.home-title {
+    color: $color-A;
+}
+
+section {
+    min-height: 50vh;
+    padding: 5vh 10%;
+}
+.section-title {
+    text-align: center;
+}
+#about, #featured, #contact{
+    margin: 20px;
+}
+/* Landing */
+section.landing {
+    background-image: url(/assets/png/pexels-borja-lopez-1346154.jpg);
+    background-color: $bg-color-B;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+section.landing > div {
+    display: flex;
+    flex-direction: column;
+}
+.code { color: white; margin: 2px 0px 2px 0px; }
+.code-key { color: purple; }
+.code-method { color: greenyellow; }
+.code-type { color: teal; }
+#name, #alias { text-align: center; }
+#name {
+    color: $color-B;
+}
+
+#alias {
+    color: $color-A;
+}
+#aka {
+    color: $color-B;
+    font-size: 25px;
+}
+/* About */
+section.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.about > h2, section.about > p {
+    text-align: center;
+    margin-bottom: 2%;
+}
+/* Feature / Project Listing */
+section.feature,
+section.project-listing-darkened {
+    background-color: $bg-color-A-shaded;
+}
+section.project-listing {
+    display: flex;
+}
+section.project-listing > img {
+    margin-bottom: auto;
+    width: 50%;
+}
+/* Contact */
+section.contact > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+section.contact > div > form, #contact-links, #contact-links > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+section.contact > div > form {
+    width: 50%;
+}
+section.contact > div > form > input, #contact-message{
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+#contact-message {
+    height: 300px;
+}
+.circle-img {
+    height: 100px;
+}
+
+/* PROJECT PAGE */
+/* Project Info */
+section.project-info {
+    min-height: 30vh;
+    display: flex;
+    gap: 20px;
+}
+section.project-info > img {
+    display: block;
+    margin-bottom: auto;
+    max-height: 30vh;
+    max-width: 30vw;
+}
+section.project-info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+div.project-info {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+/* Project Media */
+section.project-media {
+    background-color: $bg-color-A-shaded;
+    max-height: 52vh;
+    display: flex;
+    gap: 5px;
+}
+section.project-media > img{
+    width: 80%;
+}
+div.project-media {
+    overflow-x: scroll;
+    display: flex;
+    gap: 5px;
+}
