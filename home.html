@@ -34,7 +34,7 @@ permalink: /home
 </section>
 
 <a id="featured"></a>
-{% for post in site.posts offset:1 limit:1 %}
+{% for post in site.posts offset:site.featuredIndex limit:1 %}
 <!-- Project Entry -->
 <section class="feature project-listing">
     <div>
