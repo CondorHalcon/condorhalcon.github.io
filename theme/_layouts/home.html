@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<section class="landing">
+    <div>
+        <p class="code"><span class="code-type">public static int</span> <span class="code-method">Bored</span>(<span
+                class="code-type">bool</span> exhausted)</p>
+        <p class="code">{</p>
+        <p class="code" style="text-indent: 25px;"><span class="code-type">int</span> happiness;</p>
+        <p class="code" style="text-indent: 25px;"><span class="code-key">if</span> (!exhausted)</p>
+        <p class="code" style="text-indent: 25px;">{</p>
+        <p class="code" style="text-indent: 50px;"><span class="code-method">Program</span>();</p>
+        <p class="code" style="text-indent: 50px;">happiness = 1000;</p>
+        <p class="code" style="text-indent: 25px;">} <span class="code-key">else</span></p>
+        <p class="code" style="text-indent: 25px;">{</p>
+        <p class="code" style="text-indent: 50px;"><span class="code-method">PlayVideoGame</span>();</p>
+        <p class="code" style="text-indent: 50px;">happiness = <span class="code-method">Mathf</span>.infinity;</p>
+        <p class="code" style="text-indent: 25px;">}</p>
+        <p class="code" style="text-indent: 25px;"><span class="code-key">return</span> happiness;</p>
+        <p class="code">}</p>
+    </div>
+    <div>
+        <h2 id="name">Judah Hawi</h2>
+        <h2 id="alias"><span id="aka">aka </span>CondorHalcon</h2>
+    </div>
+</section>
+
+<a id="about"></a>
+{{ content }}
+
+<a id="featured"></a>
+{% for post in site.posts offset:1 limit:1 %}
+<!-- Project Entry -->
+<section class="feature project-listing">
+    <div>
+        <h2><span>Featured </span>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <a class="button" href="{{ post.url }}">More</a>
+    </div>
+    <img src="{{ post.project.screenshots[0] }}" alt="project image">
+</section>
+{% endfor %}
+
+<a id="contact"></a>
+{%- include contact.html -%}
