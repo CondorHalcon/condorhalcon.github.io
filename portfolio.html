@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Portfolio"
 permalink: /portfolio
 ---
@@ -9,17 +10,17 @@ permalink: /portfolio
 {% assign num = forloop.index | modulo : 2 %}
 {% if num == 0 %}
 <section class="project-listing project-listing-darkened">
-{% else %}
-<section class="project-listing">
-{% endif %}
-    <!-- Project Entry -->
-    <div >
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.excerpt }}</p>
-        <a class="button" href="{{ post.url }}">More</a>
-    </div>
-    <img src="{{ post.project.screenshots[0] }}" alt="project image">
-</section>
-<br>
+    {% else %}
+    <section class="project-listing">
+        {% endif %}
+        <!-- Project Entry -->
+        <div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.excerpt }}</p>
+            <a class="button" href="{{ post.url }}">More</a>
+        </div>
+        <img src="{{ post.project.screenshots[0] }}" alt="project image">
+    </section>
+    <br>
 
-{% endfor %}
+    {% endfor %}

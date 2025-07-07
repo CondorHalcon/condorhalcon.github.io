@@ -1,0 +1,17 @@
+@import "./variables";
+
+footer {
+    background-color: $bg-color-B;
+    padding: 10px 10% 50px 10%;
+}
+ul.site-contact {
+    list-style-type: none;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 40px;
+}
+footer, ul.site-contact > li > strong, ul.site-contact > li > a, .site-contact > strong, .github-credits {
+    color: $color-A;
+}
+.github-credits, .github-credits > a {
+    font-size: 10px;
+}

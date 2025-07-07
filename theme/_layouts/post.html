@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="project-info">
-    <img src="{{page.project.cover}}" alt="project front cover image"/>
+    <img src="{{page.project.cover}}" alt="project front cover image" />
     <div>
         <h2>{{page.title}}</h2>
         {{page.excerpt}}
@@ -28,14 +28,14 @@ layout: default
             </div>
         </div>
 
-        
+
     </div>
 </section>
 
 <section class="project-media">
     <div class="project-media">
         {% for item in page.project.screenshots %}
-            <img src="{{item}}" alt="project screenshot">
+        <img src="{{item}}" alt="project screenshot">
         {% endfor %}
     </div>
 </section>
