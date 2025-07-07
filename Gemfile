@@ -13,7 +13,7 @@ group :jekyll_plugins do
 end
 
 # Custom theme
-gem "condor-theme", path: "../theme"
+gem "condor-theme", path: "./theme"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
