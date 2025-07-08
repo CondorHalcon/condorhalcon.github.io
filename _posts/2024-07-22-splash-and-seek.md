@@ -6,7 +6,7 @@ permalink: /project/splash-and-seek
 project:
     cover: /assets/png/splash-and-seek/splash-and-seek-icon.png
     developer: "AIE Seattle Students: 2024 Minor Production"
-    publisher: "AIE Seattle"
+    publisher: "Academy of Interactive Entertainment"
     screenshots:
         - /assets/png/splash-and-seek/splash-and-seek-gazibo.png
         - /assets/png/splash-and-seek/splash-and-seek-food-court.png

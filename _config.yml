@@ -19,7 +19,7 @@ contact:
 webhost:
     name: "Github Pages"
     url: "https://pages.github.com/"
-featuredIndex: 2
+featuredIndex: 0
 
 # Build settings
 theme: condor-theme
