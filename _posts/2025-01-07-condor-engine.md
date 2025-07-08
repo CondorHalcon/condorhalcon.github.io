@@ -19,4 +19,4 @@ stores:
         url: "https://github.com/CondorHalcon/CondorEngine"
 ---
 
-This is the product description.
+A simplified OpenGL game/render engine loosely based on the Unreal and Unity engines. 
