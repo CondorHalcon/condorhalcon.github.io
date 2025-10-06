@@ -1,3 +1,4 @@
+// core colors
 $bg-color-A: rgb(35, 38, 40) !default;
 $bg-color-A-shaded: rgb(51, 55, 57) !default;
 $bg-color-B: rgb(20, 20, 20) !default;
@@ -8,19 +9,23 @@ $color-A-shaded: rgb(207, 207, 207) !default;
 $color-B: rgb(17, 157, 164) !default;
 $color-B-hover: rgb(8, 71, 74) !default;
 
-* {
-    color: $color-A;
-    font-family: 'Courier New', Courier, monospace;
-}
-body {
-    background-color: $bg-color-A;
-    margin: 0;
-    bottom: 0;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+// store colors
+$store-web-color: $color-A !default;
+$store-web-color-bg: $color-B !default;
+$store-web-color-hover: $color-B-hover !default;
 
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+$store-github-color: #24292f !default;
+$store-github-color-bg: #bdbdbd !default;
+$store-github-color-hover: #bdbdbd !default;
+
+$store-steam-color: $color-A !default;
+$store-steam-color-bg: $color-B !default;
+$store-steam-color-hover: #171a21d2 !default;
+
+$store-epicgames-color: #e7e7e7 !default;
+$store-epicgames-color-bg: #2a2a2a !default;
+$store-epicgames-color-hover: #2a2a2ad5 !default;
+
+$store-itch-color: white !default;
+$store-itch-color-bg: #FF2449 !default;
+$store-itch-color-hover: #ff2448d7 !default;

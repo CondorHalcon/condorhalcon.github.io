@@ -1,0 +1,26 @@
+section.contact > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+section.contact > div > form, #contact-links, #contact-links > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+section.contact > div > form {
+    width: 50%;
+}
+section.contact > div > form > input, #contact-message{
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+#contact-message {
+    height: 300px;
+}
+.circle-img {
+    height: 100px;
+}

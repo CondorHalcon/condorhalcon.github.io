@@ -1,0 +1,36 @@
+section.project-info {
+    min-height: 30vh;
+    display: flex;
+    gap: 20px;
+}
+section.project-info > img {
+    display: block;
+    margin-bottom: auto;
+    max-height: 30vh;
+    max-width: 30vw;
+}
+section.project-info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+div.project-info {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+/* Project Media */
+section.project-media {
+    background-color: $bg-color-A-shaded;
+    max-height: 52vh;
+    display: flex;
+    gap: 5px;
+}
+section.project-media > img{
+    width: 80%;
+}
+div.project-media {
+    overflow-x: scroll;
+    display: flex;
+    gap: 5px;
+}

@@ -1,0 +1,80 @@
+* {
+    color: $color-A;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: $bg-color-A;
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+// header styles
+header {
+    background-color: $bg-color-B;
+    border-bottom: 1px solid $bg-color-B-border;
+    min-height: 50px;
+    height: fit-content;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0 10%;
+    list-style-type: none;
+    height: 80px;
+    display: flex;
+    
+    a {
+        color: $color-A;
+        padding: 0 10px;
+        text-decoration: none;
+        padding-top: 30px;
+
+        .nav-item {
+            &:hover {
+                background-color: $bg-color-B-hover;
+            }
+        }
+    }
+}
+#header-blank {
+    flex-grow: 1;
+}
+
+// main styles
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+section {
+    min-height: 50vh;
+    padding: 5vh 10%;
+}
+.section-title {
+    text-align: center;
+}
+
+
+// footer styles
+footer {
+    background-color: $bg-color-B;
+    padding: 10px 10% 50px 10%;
+}
+ul.site-contact {
+    list-style-type: none;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 40px;
+}
+footer, ul.site-contact > li > strong, ul.site-contact > li > a, .site-contact > strong, .github-credits {
+    color: $color-A;
+}
+.github-credits, .github-credits > a {
+    font-size: 10px;
+}
