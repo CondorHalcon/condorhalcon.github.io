@@ -19,5 +19,5 @@ stores:
         url: "https://github.com/CondorHalcon/URP-ScreenSpaceOutlines"
 ---
 
-Easily add screen space outlines to a Unity project with this plug-and-play URP render feature.
+Easily add screen space outlines to a Unity project with this plug-and-play URP render feature. The feature uses a depth pass and a normal pass for edge detection, then draws screen space outlines in post process.
 
