@@ -2,6 +2,7 @@
 layout: post
 title: "URP Screen Space Outlines"
 permalink: /project/urp-outlines
+featured: true
 
 project:
     cover: /assets/png/urp-outlines/urp-outlines-01.png

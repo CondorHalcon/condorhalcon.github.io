@@ -2,6 +2,7 @@
 layout: post
 title: "CondorEngine"
 permalink: /project/condor-engine
+featured: true
 
 project:
     cover: /assets/png/condor-engine/condor-engine_cover.png

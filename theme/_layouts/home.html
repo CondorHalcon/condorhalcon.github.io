@@ -30,17 +30,43 @@ layout: default
 {{ content }}
 
 <a id="featured"></a>
-{% for post in site.posts offset:site.featuredIndex limit:1 %}
 <!-- Project Entry -->
-<section class="feature project-listing">
-    <div>
-        <h2><span>Featured </span>{{ post.title }}</h2>
-        <p>{{ post.excerpt }}</p>
-        <a class="button" href="{{ post.url }}">More</a>
+<section class="featured">
+    <h2>Featured</h2>
+    <div class="featured-group">
+        {%- assign featured_posts = site.posts | where: "featured", true -%}
+        {%- assign post1 = featured_posts[0] -%}
+        {%- assign post2 = featured_posts[1] -%}
+        {%- assign post3 = featured_posts[2] -%}
+
+        {%- if post1 -%}
+            <div class="featured-post">
+                <h3>{{ post1.title }}</h3>
+                <img src="{{ post1.project.cover }}" alt="project image">
+                <p>{{ post1.excerpt }}</p>
+                <a class="button" href="{{ post1.url }}">More</a>
+            </div>
+        {%- endif -%}
+
+        {%- if post2 -%}
+            <div class="featured-post">
+                <h3>{{ post2.title }}</h3>
+                <img src="{{ post2.project.cover }}" alt="project image">
+                <p>{{ post2.excerpt }}</p>
+                <a class="button" href="{{ post2.url }}">More</a>
+            </div>
+        {%- endif -%}
+
+        {%- if post3 -%}
+            <div class="featured-post">
+                <h3>{{ post3.title }}</h3>
+                <img src="{{ post3.project.cover }}" alt="project image">
+                <p>{{ post3.excerpt }}</p>
+                <a class="button" href="{{ post3.url }}">More</a>
+            </div>
+        {%- endif -%}
     </div>
-    <img src="{{ post.project.screenshots[0] }}" alt="project image">
 </section>
-{% endfor %}
 
 <a id="contact"></a>
 {%- include contact.html -%}

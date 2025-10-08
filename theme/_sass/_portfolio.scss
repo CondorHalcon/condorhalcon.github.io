@@ -1,0 +1,11 @@
+/* Project Listing */
+section.project-listing-darkened {
+    background-color: $bg-color-A-shaded;
+}
+section.project-listing {
+    display: flex;
+}
+section.project-listing > img {
+    margin-bottom: auto;
+    width: 50%;
+}
