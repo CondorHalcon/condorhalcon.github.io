@@ -4,11 +4,17 @@ section.contact > div {
     justify-content: space-around;
     align-items: center;
 }
-section.contact > div > form, #contact-links, #contact-links > a {
+section.contact > div > form, #contact-links > a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+#contact-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
 }
 section.contact > div > form {
     width: 50%;

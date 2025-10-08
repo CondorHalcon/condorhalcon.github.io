@@ -1,21 +1,13 @@
 # Config
 title: "CondorHalcon"
 titlecaps: "CONDORHALCON"
+name: "Judah Hawi"
 email: judah.hawi@condorhalcon.com
 description: >- # this means to ignore newlines until "baseurl:"
   Judah Hawi, game developer and programmer, specializing in Unity and Unreal Engine. Explore my portfolio showcasing game development projects, programming expertise, and creative solutions. Contact me for collaboration or inquiries.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.condorhalcon.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  CondorHalcon
-contact:
-    name: "Judah Hawi"
-    email: "judah.hawi@condorhalcon.com"
-    discord:
-        text: "discord.gg/x7qNK3e447"
-        url: "https://discord.gg/x7qNK3e447"
-    github:
-        tag: "@CondorHalcon"
-        url: "https://github.com/CondorHalcon"
 webhost:
     name: "Github Pages"
     url: "https://pages.github.com/"

@@ -16,7 +16,7 @@
 <body>
 
     <header>
-        <a href="/">{{site.contact.name}} | {{site.titlecaps}}</a>
+        <a href="/">{{site.name}} | {{site.titlecaps}}</a>
         <a id="header-blank"></a>
         {% for item in site.data.nav %}
         <a class="nav-item" href="{{ item.url }}">{{ item.title }}</a>
@@ -30,8 +30,8 @@
     <footer>
         <p class="site-contact"><strong>Contact</strong></p>
         <ul class="site-contact">
-            {% for item in site.data.footer %}
-            <li><strong>{{item.title }}: </strong><a href={{item.url}}>{{item.text}}</a></li>
+            {% for item in site.data.contact %}
+            <li><strong>{{item.text }}: </strong><a href={{item.url}}>{{item.tag}}</a></li>
             {% endfor %}
         </ul>
         <p class="github-credits">hosted by <a class="github-credits" href="{{site.webhost.url}}"
